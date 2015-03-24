@@ -110,6 +110,14 @@
             android:name="com.xiaomi.xms.sales.activity.IcuActionActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
+         <activity
+            android:name="com.xiaomi.xms.sales.activity.CAMICUAttentionTestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.xiaomi.xms.sales.activity.CAMICUMainTestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.xiaomi.xms.sales.activity.PaymentActivity"
             android:configChanges="keyboardHidden|orientation"

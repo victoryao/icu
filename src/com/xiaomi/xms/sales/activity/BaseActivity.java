@@ -414,9 +414,10 @@ public abstract class BaseActivity extends FragmentActivity implements Listener,
 		public void onClick(View v) {
 			switch (v.getId()) {
 			case R.id.title_bar_custom_view:
-				Intent intent = new Intent(BaseActivity.this, ICUMainActivity.class);
-				startActivity(intent);
-				finish();
+				System.exit(-1);
+//				Intent intent = new Intent(BaseActivity.this, ICUMainActivity.class);
+//				startActivity(intent);
+//				finish();
 //				if (LoginManager.getInstance().hasLogin()) {
 //					gotoShoppingCart();
 //				} else {

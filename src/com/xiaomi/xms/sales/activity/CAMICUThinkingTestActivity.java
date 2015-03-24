@@ -5,16 +5,15 @@ import android.support.v4.app.Fragment;
 
 import com.xiaomi.xms.sales.R;
 import com.xiaomi.xms.sales.ui.BaseFragment;
-import com.xiaomi.xms.sales.ui.ICUSearchPatientFragment;
-import com.xiaomi.xms.sales.ui.ICUTypeSelectFragment;
+import com.xiaomi.xms.sales.ui.CamICUAttentionTestBeginFragment;
+import com.xiaomi.xms.sales.ui.CamICUThinkingTestFragment;
 
-public class ICUMainActivity extends BaseActivity {
+public class CAMICUThinkingTestActivity extends BaseActivity {
 
 	public int existCountInStack = 1;
 
 	public static class Fragments {
-		public static final String TAG_ICU_SEARCH_PATIENT_FRAGMENT = "icu_search_patient_fragment";
-		public static final String TAG_ICU_TYPE_SELECT_FRAGMENT = "icu_type_select_fragment";
+		public static final String TAG_CAM_ICU_THINKING_TEST_BEGIN_FRAGMENT = "cam_icu_thinking_test_begin_fragment";
 	}
 
 	@Override
@@ -23,25 +22,20 @@ public class ICUMainActivity extends BaseActivity {
 		setCustomContentView(R.layout.icu_type_select_activity);
 		Bundle bundle = getIntent().getExtras();
 		handleIntent(bundle);
-		setHomeButtonEnable(false);
-		setShoppingBarEnable(false);
+		setHomeButtonEnable(true);
+		setShoppingBarEnable(true);
 	}
 
 	private void handleIntent(Bundle bundle) {
-		showFragment(Fragments.TAG_ICU_SEARCH_PATIENT_FRAGMENT, bundle, false);
+		showFragment(Fragments.TAG_CAM_ICU_THINKING_TEST_BEGIN_FRAGMENT, bundle, false);
 	}
 
 	@Override
 	protected Fragment newFragmentByTag(String tag) {
 		Fragment fragment = null;
-		if (Fragments.TAG_ICU_SEARCH_PATIENT_FRAGMENT.equals(tag)) {
-			fragment = new ICUSearchPatientFragment();
-			setTitle(R.string.icu_find_patient_title);
-		}else if(Fragments.TAG_ICU_TYPE_SELECT_FRAGMENT.equals(tag)) {
-			setHomeButtonEnable(true);
-			setShoppingBarEnable(true);
-			fragment = new ICUTypeSelectFragment();
-			setTitle(R.string.app_name);
+		if (Fragments.TAG_CAM_ICU_THINKING_TEST_BEGIN_FRAGMENT.equals(tag)) {
+			fragment = new CamICUThinkingTestFragment();
+			setTitle(R.string.cam_icu_title);
 		}
 		return fragment;
 	}

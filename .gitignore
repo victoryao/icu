@@ -12,3 +12,10 @@ project.properties
 .DS_Store
 .class
 .apk
+
+  *.class
+  *.apk
+  bin/
+  gen/
+  .settings/
+  proguard/

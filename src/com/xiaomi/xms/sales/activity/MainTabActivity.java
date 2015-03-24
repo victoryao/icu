@@ -22,13 +22,14 @@ public class MainTabActivity extends BaseActivity {
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         mBg = new ImageView(this);
-        Bitmap img = SplashUtil.getSplashImage();
-        if (img != null) {
-            mBg.setBackgroundDrawable(new BitmapDrawable(img));
-        } else {
-//            mBg.setBackgroundResource(R.drawable.default_splash);
-        	mBg.setBackgroundResource(R.drawable.adpic);
-        }
+//        Bitmap img = SplashUtil.getSplashImage();
+//        if (img != null) {
+//            mBg.setBackgroundDrawable(new BitmapDrawable(img));
+//        } else {
+////            mBg.setBackgroundResource(R.drawable.default_splash);
+//        	mBg.setBackgroundResource(R.drawable.adpic);
+//        }
+        mBg.setBackgroundResource(R.drawable.adpic);
         setContentView(mBg);
         
         mHandler = new Handler();

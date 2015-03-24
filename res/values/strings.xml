@@ -3,7 +3,7 @@
 
     <string name="channel_id">1.1.1</string>
     <string name="app_short_name">谵妄评估</string>
-    <string name="app_name">护理谵妄评估辅助系统V3.0</string>
+    <string name="app_name">欢迎使用智能化谵妄评估系统</string>
 
     <!-- Activity title related resources -->
     <string name="product_detail">商品详情</string>
@@ -671,7 +671,7 @@
     <string name="patient_add_time">入院时间</string>
     <string name="patient_diagnose">诊断</string>
      <string name="rass_test_title">题目</string>
-     
+     <string name="cam_icu_title">CAM-ICU</string>
     <!-- RASS测试题 -->
     <string name="rass_test_1">攻击性（好斗、暴力行为）-好斗行为、暴力行为，当下就对工作人员构成危险</string>
     <string name="rass_test_2">极度躁动（拉扯、拔除管路）-拉扯或拔除各种管道或插管;具有攻击性</string>
@@ -692,7 +692,8 @@
     <string name="number_test">数字法</string>
     <string name="picture_test">图片法</string>
     <string name="word_test">字母法</string>
-    <string name="number_test_title">以每3秒钟的间隔，读下列数字，请病人在听到8的时候，捏一下你的手。</string>
+    <string name="instruction">指导语</string>
+    <string name="number_test_title">跟患者说：“我要给您读10个数字，任何时候当您听到数字8，就给我一个指示。”</string>
     <string name="word_test_title">以每3秒钟的间隔，读下列数字，请病人在听到A的时候，捏一下你的手。</string>
     <string name="thinking_test_title">下面是4道是非题与1道指令题，答错的请点选。</string>
      <string name="number_test_n1">6</string>
@@ -777,6 +778,9 @@
      <string name="icu_action_n1">控制病情，解除病因</string>
      <string name="icu_action_n2">做好药物治疗的监测</string>
      <string name="icu_action_n3">减量或停用相应药品</string>
+     
+     <string name="type_one">CAM-ICU评估</string>
+     <string name="type_two">ICDSC评估</string>
      
     <!-- search -->
     <string name="search_title">“%s”</string>

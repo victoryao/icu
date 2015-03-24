@@ -1,6 +1,12 @@
 
 package com.xiaomi.xms.sales.xmsf.account.ui;
 
+import java.io.IOException;
+import java.net.URLEncoder;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -10,15 +16,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.WindowManager;
 
 import com.xiaomi.xms.sales.R;
-import com.xiaomi.xms.sales.ShopApp;
-import com.xiaomi.xms.sales.UploadLogService;
 import com.xiaomi.xms.sales.activity.BaseActivity;
 import com.xiaomi.xms.sales.activity.ICUMainActivity;
 import com.xiaomi.xms.sales.activity.MainActivity;
@@ -39,13 +41,6 @@ import com.xiaomi.xms.sales.xmsf.account.exception.AccessDeniedException;
 import com.xiaomi.xms.sales.xmsf.account.exception.InvalidCredentialException;
 import com.xiaomi.xms.sales.xmsf.account.exception.InvalidResponseException;
 import com.xiaomi.xms.sales.xmsf.account.utils.CloudHelper;
-import com.xiaomi.xms.sales.zxing.ScannerActivity;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.net.URLEncoder;
 
 public class LoginActivity extends BaseActivity implements
         LoginInputFragment.OnLoginInterface,
@@ -101,6 +96,7 @@ public class LoginActivity extends BaseActivity implements
 
         mFragmentManager.beginTransaction().add(R.id.fragment_container, mLoginInputFragment).commit();
         setShoppingBarEnable(false);
+        setHomeButtonEnable(false);
     }
 
 
@@ -161,6 +157,7 @@ public class LoginActivity extends BaseActivity implements
         }else{
         	ToastUtil.show(getApplicationContext(), R.string.login_err);
         }
+        finish();
        
 //        mLoginTask = new LoginTask(username, pwd, mServiceUrl);
 //        mLoginTask.execute();

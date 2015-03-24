@@ -142,7 +142,7 @@
 
     <style name="TextAppearance.EditText">
         <item name="android:textColor">@color/primary_text</item>
-        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textSize">@dimen/text_size_huge</item>
     </style>
 
     <style name="TextAppearance.Notice">
@@ -277,7 +277,13 @@
     <style name="Widget.Header">
         <item name="android:layout_height">@dimen/header_height</item>
         <item name="android:background">#fffbeb</item>
-        <item name="android:padding">2dip</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    
+    <style name="Widget.TitleHeader">
+        <item name="android:layout_height">@dimen/title_header_height</item>
+        <item name="android:background">#663366</item>
+        <item name="android:padding">0dip</item>
     </style>
 
     <style name="Widget.Button">
@@ -316,7 +322,6 @@
         <item name="android:background">@drawable/input_bg</item>
         <item name="android:padding">@dimen/input_padding</item>
         <item name="android:textColorHint">#cacccd</item>
-        <item name="android:textAppearance">@style/TextAppearance.Tab</item>
     </style>
 
     <style name="Widget.EditText.Multi" parent="Widget.EditText">
@@ -355,7 +360,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/title_bar_height</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:background">@drawable/title_bar_bg</item>
+        <item name="android:background">@color/yellow</item>
     </style>
 
     <style name="Widget.Dialog" parent="@android:style/Theme.Dialog">

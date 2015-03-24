@@ -2,6 +2,7 @@
 <resources>
 
     <!-- Common related -->
+    <dimen name="title_header_height">50dip</dimen>
     <dimen name="header_height">70dip</dimen>
     <dimen name="layout_padding">10dip</dimen>
     <dimen name="button_height">52dip</dimen>
@@ -18,7 +19,7 @@
     <dimen name="browser_progressbar_height">4dip</dimen>
 
     <!-- List item -->
-    <dimen name="list_item_padding">10dip</dimen>
+    <dimen name="list_item_padding">0dip</dimen>
     <dimen name="list_item_tb_padding">10dip</dimen>
     <dimen name="grid_item_padding">10dip</dimen>
     <dimen name="list_item_height_treble_line">80dip</dimen>
